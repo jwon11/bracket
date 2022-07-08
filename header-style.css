@@ -1,0 +1,138 @@
+@import url ('폰트');
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+  }
+  
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* header css */
+
+
+.topBtn{
+    border-radius: 50%; 
+    position:fixed;
+    width:45px;
+    height:45px;
+    background: white;
+    bottom:55px;
+    right:30px;
+    text-decoration: none;
+    text-align: center; 
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+}
+
+.topBtn p{
+    padding-top:30px;
+    color: gray;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+.header {
+    position: absolute;
+    background-color: transparent;
+    overflow: hidden;
+    color: #fff;
+    padding: 0px;
+    margin: 0 ;
+    z-index: 1;
+}
+
+.logo {
+    padding: 20px;
+    float:left;
+    object-fit:contain;
+}
+
+
+/* main css */
+
+
+#main{
+    width:100%;
+    height:130vh;
+    background: url('../images/헤더배경.png') center center;
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    color: white;
+    vertical-align:top;
+}
+
+#main .main-photo {
+    position:absolute;
+    left: 650px;
+    top: 160px;
+
+}
+#main .text-wrap {
+    top: 20px;
+    padding-left: 30px;
+    position: relative; 
+}
+
+#main .text-wrap h4{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#main .text-wrap p{
+    font-size: 1rem;
+    max-width: 600px;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width:940px) {
+    
+    .header {
+        height: 80px;
+        
+    }
+    .header .logo { 
+        width: 150px;
+        height: auto;
+       }
+
+
+    #main{
+        background: url('../images/헤더배경sm.png') center center;
+        background-position-x: right;
+    }
+
+    #main .main-photo {
+        display: block;
+        top: 10%;
+        left: 10%;
+        width: 400px;
+        height: auto;
+    }
+
+    #main .text-wrap {
+        display: block;
+        padding-left: 70px;
+        top: 180px;
+        max-width: 350px;
+
+    }
+
+    
+    #main .text-wrap h4{
+        font-size: 2rem;
+    }
+    
+}
