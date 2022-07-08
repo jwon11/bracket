@@ -10,21 +10,26 @@
     margin: left 800px;
     margin-right: 50px;
     float: right;
-
+    display: block;
 }
    
 .ministry-Envrion-img{
+    top: 30%;
+    width:25%;
   float: right ;
-
-;
+  display: block;
+  font-weight: 600;
+    
 }
 .ecoce-img-wrap{
+relative
 position: right;
-} 
+position:relative;,
+position:absolute;} 
 
 .eco-clean-earth{
 text-align: right;
-}
+font}
 
 .box-wrap{
 
