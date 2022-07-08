@@ -52,7 +52,7 @@ a:active {
 
 .b_wrap .subTitleEng {
   color: #ee72d8;
-  /* font-size: 0.938em; */
+  font-size: 0.938em;
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase; /* 대소문자 */
@@ -118,7 +118,7 @@ a:active {
   min-width: 22%;
   display: inline-block;
   position: relative;
-  /* width: calc(100% / 4 - 3%); */
+  width: calc(100% / 4 - 3%);
   height: 350px;
   text-align: center;
   margin: 0 auto;
