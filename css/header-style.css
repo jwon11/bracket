@@ -6,13 +6,17 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    display:;
+
   }
   
 html {
     scroll-behavior: smooth;
 }
 
+
+
+
+/* header css */
 
 
 .topBtn{
@@ -23,31 +27,22 @@ html {
     background: white;
     bottom:55px;
     right:30px;
-
     text-decoration: none;
     text-align: center; 
-    color: blue;
+    color: rgb(17, 17, 17);
     font-size: 20px;
 }
 
-
-
 .topBtn p{
-    padding-top:20px;
+    padding-top:30px;
     color: gray;
-
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 
-/* header css */
 
-body {
-    width:100%;
-
-}
-
-
-header {
+.header {
     position: absolute;
     background-color: transparent;
     overflow: hidden;
@@ -55,12 +50,12 @@ header {
     padding: 0px;
     margin: 0 ;
     z-index: 1;
-
 }
 
 .logo {
-    padding: 30px;
+    padding: 20px;
     float:left;
+    object-fit:contain;
 }
 
 
@@ -69,9 +64,9 @@ header {
 
 #main{
     width:100%;
-    height:120vh;
+    height:130vh;
     background: url('../images/헤더배경.png') center center;
-    background-size: cover; /*사이즈조절*/
+    background-size: cover; 
     display: flex;
     align-items: center;
     color: white;
@@ -79,46 +74,65 @@ header {
 }
 
 #main .main-photo {
-    position: absolute;
+    position:absolute;
     left: 650px;
     top: 160px;
 
 }
-#main .title {
+#main .text-wrap {
+    top: 20px;
     padding-left: 30px;
+    position: relative; 
 }
 
-#main h4{
-    font-size: 2.5rem;
-    margin: ;
+#main .text-wrap h4{
+    font-size: 3rem;
+    font-weight: bold;
 }
 
-#main span{
+#main .text-wrap p{
     font-size: 1rem;
-    margin-top: 0;
+    max-width: 600px;
+    font-weight: 500;
 }
 
 
-
-
-
-@media screen and (max-width:800px) {
-    .logo { 
-        width:50%; 
-        object-fit:contain;
+@media screen and (max-width:940px) {
+    
+    .header {
+        height: 80px;
+        
+    }
+    .header .logo { 
+        width: 150px;
+        height: auto;
        }
 
-    .main-photo {
-        width:100%;
+
+    #main{
+        background: url('../images/헤더배경sm.png') center center;
+        background-position-x: right;
     }
 
-    #main h4{
+    #main .main-photo {
+        display: block;
+        top: 10%;
+        left: 10%;
+        width: 400px;
+        height: auto;
+    }
+
+    #main .text-wrap {
+        display: block;
+        padding-left: 70px;
+        top: 180px;
+        max-width: 350px;
+
+    }
+
+    
+    #main .text-wrap h4{
         font-size: 2rem;
-        margin: ;
     }
     
-    
-    #main  {
-        background: url('../images/헤더배경sm.png');
-    }
 }

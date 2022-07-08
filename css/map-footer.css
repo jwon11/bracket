@@ -1,0 +1,109 @@
+/* 전체 설정 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;  
+    vertical-align: baseline;
+}
+body{
+    max-width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    line-height: 1;
+}
+a {
+    /* color: -webkit-link; */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* 지도 설정 */
+.indexKakaoMap{
+    width: 65%;
+    height: 45vw;
+    max-width: 1400px;
+    position:relative;
+    overflow:hidden; 
+    background: url("http://t1.daumcdn.net/mapjsapi/images/2x/bg_tile.png"); 
+}
+.map-wrap{
+    margin: 200px 200px;
+    /* margin-left: 200px; */
+    display: flex;
+    gap: 90px;
+}
+
+.map-wrap .map-info-wrap{
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+    font-size: 18px;
+    margin-top: 75px;
+    visibility:visible;
+}
+.map-wrap .map-info-wrap .map-info > p:first-child {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.map-wrap .map-info-wrap .map-info a p, .map-wrap .map-info-wrap .map-info p:last-child {
+    color: #7b7b7b;
+}
+.map-wrap .map-info-wrap .map-info p:last-child {
+    line-height: 25px;
+}
+/* .fadeIn{
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+} */
+
+@media screen and (max-width: 1300px){
+    .map-wrap{
+    gap: 50px;
+    margin: 200px 50px;}
+}
+
+/* footer */
+.footer-wrap{
+    background-image: url(../images/footer2.png);
+    background-size: cover;
+    margin: 0 auto;
+    padding: 80px 50px;
+    display: flex;
+}
+@media screen and (min-width:1300px){
+    .footer-wrap .footer-logo {
+        margin-left: 250px;
+    }
+}
+.footer-wrap .footer-content{
+    margin-left: 5%;
+    width: 85%;
+    display: inline-block;
+}
+.footer-content .footer-content-main{
+    color: white;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.footer-content .footer-info-wrap, .footer-info a{
+    color: #b9b9b9;
+    line-height: 25px;
+}
+.footer-info-wrap .footer-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-info-wrap .footer-info p{
+    margin: 0 !important;
+    width: 50%;
+}
+
+.footer-info p:nth-of-type(5){
+    width: 100%;
+}
+.footer-wrap .copyright{
+    color: #828282;
+}
+

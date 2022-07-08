@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+/* ----- 공통 ----- */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +13,7 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   max-width: 1400px;
   margin: 0px auto;
+  text-align: center;
 }
 
 ol,
@@ -26,10 +29,6 @@ div {
 a {
   display: inline-block;
   text-decoration: none;
-
-  /* width: 100%;
-    height: 100%; */
-  /* background-color: #ffc6f5; */
 }
 
 a:link {
@@ -42,111 +41,122 @@ a:active {
   color: #2e2e2e;
 }
 
-/* ---------- */
-
-.b_wrap {
-  display: block;
-  height: 750px;
-  padding-top: 200px;
-  /* overflow: hidden; */
-}
-
-/* .app-text{
-}
- 
-
-.b_wrap p {
-    width: 100%;
-}*/
-
-/* 글씨 */
+/* ----- 글씨 ----- */
 
 .b_wrap .title {
-  font-size: 23px;
-  margin: 10px 0;
-  font-weight: 500;
   color: #2e2e2e;
+  font-size: 23px;
+  font-weight: 500;
+  margin: 10px 0;
 }
 
 .b_wrap .subTitleEng {
-  display: inline;
-  font-weight: 600;
-  /* font-size: 0.938em; */
-  letter-spacing: 3px;
   color: #ee72d8;
-  text-transform: uppercase;
+  /* font-size: 0.938em; */
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase; /* 대소문자 */
+  display: inline;
 }
 
-/* 이미지 */
+.b_wrap .back .app-text {
+  color: white;
+  font-size: 20px;
+  position: relative; /*위치조정*/
+  top: 85px;
+}
 
-.img_wrap {
+/* ----- front 이미지 ----- */
+
+.b_wrap .img_wrap {
   display: inline-block;
   position: relative;
-
   width: 100%;
   height: 185px;
 }
 
 .b_wrap img {
   width: 100px;
-  object-fit: cover;
-
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 45px;
   padding-bottom: 50px;
+  object-fit: cover;
 }
 
-/* 카드 4등분 */
-.b_wrap .con {
-  max-width: 1400px;
-  margin: 0 auto;
+#appicon {
+  width: auto;
+  height: 125px; /* 앱개발 아이콘 이미지 크기조정*/
+  margin-top: 55px;
 }
+
+#metaverse {
+  margin-top: 60px; /* 아이콘 이미지 위치조정*/
+}
+
+/* front */
+/* ----- 영역 ----- */
+
+.b_wrap {
+  display: block;
+  height: 750px;
+  padding-top: 200px;
+}
+
+.b_wrap .container {
+  max-width: 1400px;
+}
+
+.b_wrap .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ----- 카드 배치 ----- */
 
 .b_wrap .flip {
+  min-width: 22%;
   display: inline-block;
   position: relative;
-  padding: 20px;
+  /* width: calc(100% / 4 - 3%); */
   height: 350px;
   text-align: center;
   margin: 0 auto;
-  /* margin: 1.250em; */
-  /* perspective: 1000px; */
+  margin: 20px;
+  padding: 0;
   transition: 1s;
+  /* perspective: 1000px; */ /* 원근감 */
   /* perspective-origin: 50% 50%; */
 }
 
-.b_wrap .flip .flip-item {
-  position: absolute;
-  
+.b_wrap .flip-item {
   width: 100%;
-  height: 100%;
+  display: inline-block;
   padding-top: 50px;
   padding-bottom: 50px;
-  /* background-color: red; */
-
-  display: inline-block;
   transform-style: preserve-3d;
   backface-visibility: hidden;
 }
 
 /* 애니메이션 */
-/* back 이미지 */
+/* ----- back 이미지 ----- */
 
 #back1 {
   width: 100%;
   height: 100%;
-  background-image: url("../images/앱개발.jpg");
+  background-image: radial-gradient(circle, #0000003a, #000000d5),
+    url("../images/앱개발.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
   background-position: center center;
-
+  overflow: hidden;
 }
 
 #back2 {
   width: 100%;
   height: 100%;
-  background-image: url("../images/웹구축.jpg");
+  background-image: radial-gradient(circle, #0000003a, #000000d5),
+    url("../images/웹구축.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -156,7 +166,8 @@ a:active {
 #back3 {
   width: 100%;
   height: 100%;
-  background-image: url("../images/AI기술개발.jpg");
+  background-image: radial-gradient(circle, #0000003a, #000000d5),
+    url("../images/AI기술개발.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -166,33 +177,36 @@ a:active {
 #back4 {
   width: 100%;
   height: 100%;
-  background-image: url("../images/XR콘텐츠.jpg");
+  background-image: radial-gradient(circle, #0000003a, #000000d5),
+    url("../images/XR콘텐츠.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   overflow: hidden;
 }
 
-.app-text {
-  color: white;
-  font-size: 18px;
-}
-
-
-/* 마우스오버 */
+/* ----- 마우스오버 ----- */
 
 .front {
+  min-width: 230px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
   background-color: #f6f6f6;
   position: absolute;
   backface-visibility: hidden;
   transition: 1s;
   transform: rotateY(0deg);
-  z-index: 1;
+  z-index: 2;
 }
 
 .back {
-  transform: rotateY(-180deg);
-  
+  min-width: 230px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  transform: rotateY(180deg);
+  transition: 1s;
 }
 
 .flip:hover .front {
@@ -202,3 +216,27 @@ a:active {
   transform: rotateY(0deg);
 }
 
+/* ----- 반응형웹 ----- */
+
+@media screen and (max-width: 1330px) {
+  .row {
+    width: auto;
+  }
+
+  .flip {
+    display: none; /*크롬 미디어쿼리 적용*/
+    width: 43.33333333%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    width: auto;
+    /* flex-wrap: wrap; */
+  }
+
+  .flip {
+    display: none; /*크롬 미디어쿼리 적용*/
+    width: auto;
+  }
+}
