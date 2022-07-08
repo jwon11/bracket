@@ -1,5 +1,6 @@
-/* 전체 설정 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+@charset "utf-8";
+/***** Reset *****/
+*{
     margin: 0;
     padding: 0;
     border: 0;
@@ -19,7 +20,60 @@ a {
     text-decoration: none;
 }
 
-/* 지도 설정 */
+/***** centerlogo *****/
+.centerlogo-wrap{
+    background-color: #04088a;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 300px;
+}
+.center-logo{
+    position: relative;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    visibility: visible;
+}
+.center-logo img{
+    position: absolute;
+    bottom: 0;
+}
+@media screen and (max-width:1500px){
+    .center-logo img{
+        left: 2%;
+    }
+}
+@media screen and (max-width:1217px){
+    .centerlogo-wrap{
+        height: 250px;
+    }
+    .center-logo img{
+        width: 50%;
+    }
+}
+@media screen and (max-width:940px){
+    .centerlogo-wrap{
+        height: 400px;
+        text-align: center;
+    }
+    .center-logo img{
+        width: 60%;
+        position: unset;
+        margin: 70px;
+    }
+}
+@media screen and (max-width:430px){
+    .centerlogo-wrap{
+        height: 320px;
+    }
+    .center-logo img{
+        margin: 53px;
+    }
+}
+/***** End center-logo *****/
+
+/***** map *****/
 .indexKakaoMap{
     width: 65%;
     height: 45vw;
@@ -62,9 +116,58 @@ a {
     .map-wrap{
     gap: 50px;
     margin: 200px 50px;}
+    .indexKakaoMap{
+        height: 585px;
+    }
+    .map-wrap .map-info-wrap{
+        width: 40%;
+    }
 }
+@media screen and (max-width:1217px){
+    .indexKakaoMap{
+        height: 650px;
+    }
+}
+@media screen and (max-width: 940px){
+    .map-wrap{
+    gap: 50px;
+    }
+    .indexKakaoMap{
+        width: 90%;
+        height: 600px;
+    }
+}
+@media screen and (max-width: 640px){
+    .map-wrap{
+    flex-direction: column-reverse;
+    margin: 0;
+    margin-bottom: 300px;
+    align-items: center;
+    }
+    .map-wrap .map-info-wrap{
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    gap: 0;
+    width: 90%;
+    }
+    .map-wrap .map-info-wrap .map-info{
+    width: 50%;
+    margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:430px){
+    .map-wrap .map-info-wrap{
+    flex-direction: column;
+    }
+    .map-wrap .map-info-wrap .map-info{
+    width: 100%;
+    margin-bottom: 23px;
+    }
+}
+/***** End map *****/
 
-/* footer */
+/***** footer *****/
 .footer-wrap{
     background-image: url(../images/footer2.png);
     background-size: cover;
@@ -106,4 +209,44 @@ a {
 .footer-wrap .copyright{
     color: #828282;
 }
-
+@media screen and (max-width:1299px){
+    .footer-wrap > div {
+    margin-left: 0px;
+    }
+}
+@media screen and (max-width:940px){
+    .footer-wrap .footer-content-main{
+    font-size: 16px;
+    }
+    .footer-wrap .footer-content .footer-info-wrap{
+    font-size: 14px;
+    }
+}
+@media screen and (max-width:640px){
+    .footer-wrap{
+    padding: 40px;
+    display: block;
+    }
+    .footer-wrap .footer-content-main, .footer-info-wrap .copyright{
+    font-size: 16px;
+    }
+    .footer-wrap .footer-logo{
+        text-align: center;
+        margin-bottom: 20px;
+        }
+    .footer-wrap .footer-logo img{
+    width: 30%;
+    height: auto;
+    float: none;
+    }
+}
+@media screen and (max-width:430px){
+    .footer-wrap{
+    padding: 30px 15px;
+    }
+    .footer-wrap .footer-logo img{
+    width: 130px;
+    height: auto;
+    }
+}
+/***** End footer *****/
