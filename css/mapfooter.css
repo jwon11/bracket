@@ -1,0 +1,254 @@
+@charset "utf-8";
+/***** Reset *****/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;  
+    vertical-align: baseline;
+}
+body{
+    max-width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    line-height: 1;
+}
+a {
+    /* color: -webkit-link; */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/***** centerlogo *****/
+.centerlogo-wrap{
+    background-color: #04088a;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 300px;
+}
+.center-logo{
+    position: relative;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    visibility: visible;
+}
+.center-logo img{
+    position: absolute;
+    bottom: 0;
+}
+@media screen and (max-width:1500px){
+    .center-logo img{
+        left: 2%;
+    }
+}
+@media screen and (max-width:1217px){
+    .centerlogo-wrap{
+        height: 250px;
+    }
+    .center-logo img{
+        width: 50%;
+    }
+}
+@media screen and (max-width:940px){
+    .centerlogo-wrap{
+        height: 400px;
+        text-align: center;
+    }
+    .center-logo img{
+        width: 60%;
+        position: unset;
+        margin: 70px;
+    }
+}
+@media screen and (max-width:430px){
+    .centerlogo-wrap{
+        height: 320px;
+    }
+    .center-logo img{
+        margin: 53px;
+    }
+}
+/***** End center-logo *****/
+
+/***** map *****/
+.indexKakaoMap{
+    width: 65%;
+    height: 45vw;
+    max-width: 1400px;
+    position:relative;
+    overflow:hidden; 
+    background: url("http://t1.daumcdn.net/mapjsapi/images/2x/bg_tile.png"); 
+}
+.map-wrap{
+    margin: 200px 200px;
+    /* margin-left: 200px; */
+    display: flex;
+    gap: 90px;
+}
+
+.map-wrap .map-info-wrap{
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+    font-size: 18px;
+    margin-top: 75px;
+    visibility:visible;
+}
+.map-wrap .map-info-wrap .map-info > p:first-child {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.map-wrap .map-info-wrap .map-info a p, .map-wrap .map-info-wrap .map-info p:last-child {
+    color: #7b7b7b;
+}
+.map-wrap .map-info-wrap .map-info p:last-child {
+    line-height: 25px;
+}
+/* .fadeIn{
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+} */
+
+@media screen and (max-width: 1300px){
+    .map-wrap{
+    gap: 50px;
+    margin: 200px 50px;}
+    .indexKakaoMap{
+        height: 585px;
+    }
+    .map-wrap .map-info-wrap{
+        width: 40%;
+    }
+}
+@media screen and (max-width:1217px){
+    .indexKakaoMap{
+        height: 650px;
+    }
+}
+@media screen and (max-width: 940px){
+    .map-wrap{
+    gap: 50px;
+    }
+    .indexKakaoMap{
+        width: 90%;
+        height: 600px;
+    }
+}
+@media screen and (max-width: 640px){
+    .map-wrap{
+    flex-direction: column-reverse;
+    margin: 0;
+    margin-bottom: 300px;
+    align-items: center;
+    }
+    .map-wrap .map-info-wrap{
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    gap: 0;
+    width: 90%;
+    }
+    .map-wrap .map-info-wrap .map-info{
+    width: 50%;
+    margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:430px){
+    .map-wrap .map-info-wrap{
+    flex-direction: column;
+    }
+    .map-wrap .map-info-wrap .map-info{
+    width: 100%;
+    margin-bottom: 23px;
+    }
+}
+/***** End map *****/
+
+/***** footer *****/
+.footer-wrap{
+    background-image: url(../images/footer2.png);
+    background-size: cover;
+    margin: 0 auto;
+    padding: 80px 50px;
+    display: flex;
+}
+.footer-wrap .footer-content{
+    margin-left: 5%;
+    width: 85%;
+    display: inline-block;
+}
+.footer-content .footer-content-main{
+    color: white;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.footer-content .footer-info-wrap, .footer-info a{
+    color: #b9b9b9;
+    line-height: 25px;
+}
+.footer-info-wrap .footer-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-info-wrap .footer-info p{
+    text-align: left;   
+    margin: 0 !important;
+    width: 50%;
+}
+/* text-align: left; 추가 합쳤을 때 중앙 정렬 방지 */
+
+.footer-info p:nth-of-type(5){
+    width: 100%;
+}
+.footer-wrap .copyright{
+    color: #828282;
+}
+@media screen and (min-width:1300px){
+    .footer-wrap .footer-logo {
+        margin-left: 250px;
+    }
+}
+@media screen and (max-width:1299px){
+    .footer-wrap > div {
+    margin-left: 0px;
+    }
+}
+@media screen and (max-width:940px){
+    .footer-wrap .footer-content-main{
+    font-size: 16px;
+    }
+    .footer-wrap .footer-content .footer-info-wrap{
+    font-size: 14px;
+    }
+}
+@media screen and (max-width:640px){
+    .footer-wrap{
+    padding: 40px;
+    display: block;
+    }
+    .footer-wrap .footer-content-main, .footer-info-wrap .copyright{
+    font-size: 16px;
+    }
+    .footer-wrap .footer-logo{
+        text-align: center;
+        margin-bottom: 20px;
+        }
+    .footer-wrap .footer-logo img{
+    width: 30%;
+    height: auto;
+    float: none;
+    }
+}
+@media screen and (max-width:430px){
+    .footer-wrap{
+    padding: 30px 15px;
+    }
+    .footer-wrap .footer-logo img{
+    width: 130px;
+    height: auto;
+    }
+}
+/***** End footer *****/
