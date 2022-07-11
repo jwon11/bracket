@@ -120,7 +120,7 @@ a:active {
   min-width: 22%;
   display: inline-block;
   position: relative;
-  width: calc(100% / 4 - 3%);
+  /* width: calc(100% / 4 - 3%); */
   height: 350px;
   text-align: center;
   margin: 0 auto;
