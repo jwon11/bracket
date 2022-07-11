@@ -220,6 +220,7 @@ a {
 }
 .footer-wrap .copyright{
     color: #828282;
+    font-size: 16px;
 }
 @media screen and (min-width:1300px){
     .footer-wrap .footer-logo {
