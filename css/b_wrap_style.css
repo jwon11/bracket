@@ -103,11 +103,11 @@ a:active {
   padding-bottom: 200px;
 }
 
-.b_wrap .container {
+.b_wrap .con {
   max-width: 1400px;
 }
 
-.b_wrap .container .row {
+.b_wrap .con .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
