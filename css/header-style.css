@@ -31,10 +31,11 @@ html {
     text-align: center; 
     color: rgb(17, 17, 17);
     font-size: 20px;
+    z-index:999;
 }
 
 .topBtn p{
-    padding-top:30px;
+    padding-top:60px;
     color: gray;
     font-size: 1rem;
     font-weight: bold;
