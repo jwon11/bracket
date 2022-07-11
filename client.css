@@ -1,5 +1,5 @@
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
@@ -14,6 +14,7 @@ body {
 .client {
     max-width: 1400px;
     text-align: center;
+    margin: 150px auto;
 }
 
 .client ul {
@@ -61,14 +62,12 @@ body {
     line-height: 70px;
     font-size: 60px;
     font-weight: bold;
-    border: 0;
+    border: none;
     border-radius: 50%;
+    cursor: pointer;
+    outline: none;
     color: white;
     background-color: darkblue;
-}
-
-.flip {
-    height: 100vh;
 }
 
 .animatable {
@@ -83,6 +82,10 @@ body {
     animation-fill-mode: both;
     animation-play-state: running;
 }
+
+/* .flip {
+    height: 100vh;
+} */
 
 @keyframes fadeInUp {
     0% {
@@ -133,6 +136,17 @@ body {
     .client ul li {
         width: calc(100% / 4);
         margin: 0 0 30px 0;
+    }
+
+    .client ul li:nth-child(13), .client ul li:nth-child(14),
+    .client ul li:nth-child(15), .client ul li:nth-child(16),
+    .client ul li:nth-child(17), .client ul li:nth-child(18),
+    .client ul li:nth-child(19), .client ul li:nth-child(20),
+    .client ul li:nth-child(21), .client ul li:nth-child(22),
+    .client ul li:nth-child(23), .client ul li:nth-child(24),
+    .client ul li:nth-child(25), .client ul li:nth-child(26),
+    .client ul li:nth-child(27) {
+        display: none;
     }
 
     .client ul li .img-wrap {
