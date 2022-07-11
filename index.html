@@ -464,8 +464,8 @@
     <!--지도 푸터 -->
 
     <div class="map-wrap">
-        <div id="map" class="indexKakaoMap"></div>
-        <div class="map-info-wrap">
+        <div id="map" class="indexKakaoMap wow" data-wow-delay="0.3s" style="animation-delay: 0.3s; animation-name:fadeIn;"></div>
+        <div class="map-info-wrap wow" data-wow-delay="0.5s" style="animation-delay: 0.5s; animation-name: fadeInRight;">
             <div class="map-info">
                 <p>TEL</p>
                 <a href="tel:053-475-2100;" style="cursor:text"><p>(053) 475-2100</p></a>
@@ -515,6 +515,9 @@
     
         // 마커가 지도 위에 표시되도록 설정합니다
         marker.setMap(map);
+	
+	// 나타내기 wow 기능 사용
+        new WOW().init();
     </script>
 
     <footer>
@@ -545,25 +548,6 @@
             </div>
         </div>
     </footer>
-<!-- 
-    span태그 사용한 거  
-    <div class="footer-info">
-    <p>
-        <span>상호. (주)리소프트</span>
-    </p>
-    <p><span>대표이사. 오유나</span></p>
-    <p><span>사업자등록번호. 722-81-02219</span></p>
-    <p><span>개인정보책임자. 이현지</span></p>
-    <pre> </pre>
-    <p><span>주소. (41260) 대구광역시 동구 동구대로 465, 대구스케일업허브 (DASH) 713 (신천동 106)</span></p>
-    <p><span>전화. </span><a href="tel:053-475-2110" style="cursor: text;">
-        <span>(053) 475-2100</span></a>
-        <i class="fas fa-solid fa-pipe"></i> </p>
-    <p><span>팩스. </span><a href="javascript:void(0);" style="cursor: text;">
-        <span>(0504) 257-5966</span></a></p>
-    <p><span>이메일. call@resoft.kr</span></p>
-</div>  -->
-
     <!-- script -->
     <!-- 헤더 js -->
     <script type="text/javascript" src="wow.min.js"></script>
