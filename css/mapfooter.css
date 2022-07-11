@@ -74,6 +74,10 @@ a {
 /***** End center-logo *****/
 
 /***** map *****/
+.map-info-p{
+    line-height: 25px;
+    font-size: px;
+}
 .indexKakaoMap{
     width: 65%;
     height: 45vw;
@@ -176,6 +180,9 @@ a {
 /***** End map *****/
 
 /***** footer *****/
+.footer-info-p{
+    font-size: 16px;
+}
 .footer-wrap{
     background-image: url(../images/footer2.png);
     background-size: cover;
@@ -228,7 +235,7 @@ a {
     .footer-wrap .footer-content-main{
     font-size: 16px;
     }
-    .footer-wrap .footer-content .footer-info-wrap{
+    .footer-info-p{
     font-size: 14px;
     }
 }
