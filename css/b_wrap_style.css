@@ -103,15 +103,16 @@ a:active {
   padding-bottom: 200px;
 }
 
-.b_wrap .con {
+.b_wrap .b_con {
   max-width: 1400px;
   display: inline;
 }
 
-.b_wrap .con .row {
+.b_wrap .b_con .b_row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0;
 }
 
 /* ----- 카드 배치 ----- */
@@ -120,7 +121,7 @@ a:active {
   min-width: 22%;
   display: inline-block;
   position: relative;
-  width: calc(100% / 4 - 3%);
+  /* width: calc(100% / 4 - 3%); */
   height: 350px;
   text-align: center;
   margin: 0 auto;
