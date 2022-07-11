@@ -107,10 +107,18 @@ a {
 .map-wrap .map-info-wrap .map-info p:last-child {
     line-height: 25px;
 }
-/* .fadeIn{
+.fadeIn{
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
-} */
+}
+.fadeInRight{
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+.fadeInDown{
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
 
 @media screen and (max-width: 1300px){
     .map-wrap{
