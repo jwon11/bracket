@@ -22,9 +22,9 @@ ul {
   padding: 0;
 }
 
-div {
+/* div {
   display: inline;
-}
+} */
 
 a {
   display: inline-block;
@@ -98,8 +98,9 @@ a:active {
 
 .b_wrap {
   display: block;
-  height: 750px;
+  min-height: 750px;
   padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .b_wrap .container {
@@ -218,16 +219,7 @@ a:active {
 
 /* ----- 반응형웹 ----- */
 
-@media screen and (max-width: 1330px) {
-  .row {
-    width: auto;
-  }
 
-  .flip {
-    display: none; /*크롬 미디어쿼리 적용*/
-    width: 43.33333333%;
-  }
-}
 
 @media screen and (max-width: 600px) {
   .row {
@@ -238,5 +230,17 @@ a:active {
   .flip {
     display: none; /*크롬 미디어쿼리 적용*/
     width: auto;
+  }
+}
+
+
+@media screen and (max-width: 1330px) {
+  .row {
+    width: auto;
+  }
+
+  .flip {
+    display: none; /*크롬 미디어쿼리 적용*/
+    width: 43.33333333%;
   }
 }
