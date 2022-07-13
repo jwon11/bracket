@@ -1,4 +1,22 @@
 window.onload = function() {
+    const scrollY = window.scrollY;
+    const innerHeight = window.innerHeight;
+    const scroll = (innerHeight * 0.9) + scrollY;
+
+    // 애니메이션 효과를 넣을 DOM 객체 배열
+    const itemList = document.querySelectorAll(".client ul li");
+    let array = [];
+    for(let i = 0; i < itemList.length; i++) {
+        array.push(itemList[i]);
+    }
+
+    Array.prototype.forEach.call(itemList, function(li) {
+        // 객체 위치와 높이 비교 : 화면에 표출되는 높이인지 체크
+        if(li.offsetTop < scroll) {
+            scrollEvent();
+        }
+    });
+
     window.addEventListener("scroll", function() {
         scrollEvent();
     });
@@ -47,7 +65,7 @@ let width1217 = function() {
             visiArray[i].style.animationDelay = second + "s";
         }
 
-        let more = document.getElementsByClassName("moreBtn")[0];
+        let more = document.getElementsByClassName("more-btn")[0];
         more.addEventListener("click", function(e) {
             e.preventDefault();
             let hiddenArray = [];
@@ -80,7 +98,7 @@ let width940 = function() {
             visiArray[i].style.animationDelay = second + "s";
         }
 
-        let more = document.getElementsByClassName("moreBtn")[0];
+        let more = document.getElementsByClassName("more-btn")[0];
         more.addEventListener("click", function(e) {
             e.preventDefault();
             let hiddenArray = [];
