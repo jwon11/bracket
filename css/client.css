@@ -32,7 +32,7 @@ body {
     align-items: center;
 }
 
-.client ul li .imgWrap {
+.client ul li .img-wrap {
     width: 120px;
     height: 120px;
     position: relative;
@@ -40,7 +40,7 @@ body {
     border-radius: 50%;
 }
 
-.client ul li .imgWrap img {
+.client ul li .img-wrap img {
     max-width: 100%;
     padding: 20px;
     margin-bottom: 5px;
@@ -56,7 +56,7 @@ body {
     word-break: break-all;
 }
 
-.moreBtn {
+.more-btn {
     display: none;
     width: 70px;
     line-height: 70px;
@@ -118,7 +118,7 @@ body {
         font-size: 14px;
     }
 
-    .moreBtn {
+    .more-btn {
         display: initial;
     }
 }
@@ -145,7 +145,7 @@ body {
         display: none;
     }
 
-    .client ul li .imgWrap {
+    .client ul li .img-wrap {
         width: 110px;
         height: 110px;
     }
@@ -154,7 +154,7 @@ body {
         font-size: 12px;
     }
 
-    .moreBtn {
+    .more-btn {
         width: 50px;
         line-height: 50px;
         font-size: 40px;
