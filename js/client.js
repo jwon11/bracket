@@ -1,5 +1,5 @@
 window.onload = function() {
-    window.addEventListener("scroll", function(e) {
+    window.addEventListener("scroll", function() {
         scrollEvent();
     });
 }
@@ -47,7 +47,7 @@ let width1217 = function() {
             visiArray[i].style.animationDelay = second + "s";
         }
 
-        let more = document.getElementsByClassName("more-btn")[0];
+        let more = document.getElementsByClassName("moreBtn")[0];
         more.addEventListener("click", function(e) {
             e.preventDefault();
             let hiddenArray = [];
@@ -80,7 +80,7 @@ let width940 = function() {
             visiArray[i].style.animationDelay = second + "s";
         }
 
-        let more = document.getElementsByClassName("more-btn")[0];
+        let more = document.getElementsByClassName("moreBtn")[0];
         more.addEventListener("click", function(e) {
             e.preventDefault();
             let hiddenArray = [];
