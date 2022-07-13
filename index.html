@@ -26,25 +26,20 @@
     <link rel="stylesheet" href="./css/project.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   
-<!-- 에코스 css -->
+    <!-- 에코스 css -->
     <link rel="stylesheet" href="./css/ecoce.css">
 
-<!-- 클라이언트 css -->
+    <!-- 클라이언트 css -->
     <link rel="stylesheet" href="./css/client.css">
 
-<!-- 지도푸터 css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- css연결 -->
     <link rel="stylesheet" href="./css/mapfooter.css">
     <!-- 폰트 -->
     <!--<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap" rel="stylesheet"> -->
     <!-- 폰트어썸 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- 카카오 api -->
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=027b7e5db240a01344d08087c7742cd4"></script>
-    <!-- wow.js -->
-    <link rel="stylesheet" href="https://wowjs.uk/css/libs/animate.css">
-    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+
+
 </head>
 <body>
 
@@ -464,25 +459,24 @@
 
 
     <!--지도 푸터 -->
-
-    <div class="map-wrap">
-        <div id="map" class="indexKakaoMap wow fadeIn" data-wow-delay="0.3s" style="animation-delay: 0.3s; animation-name:fadeIn;"></div>
-        <div class="map-info-wrap wow fadeInRight" data-wow-delay="0.5s" style="animation-delay: 0.5s; animation-name: fadeInRight;">
-            <div class="map-info">
-                <p class="map-info-p">TEL</p>
-                <a href="tel:053-475-2100;" style="cursor:text"><p class="map-info-p">(053) 475-2100</p></a>
+    <div class="map_wrap">
+        <div id="map" class="index_kakao_map wow fadeIn" data-wow-delay="0.3s" style="animation-delay: 0.3s; animation-name:fadeIn;"></div>
+        <div class="map_info_wrap wow fadeInRight" data-wow-delay="0.5s" style="animation-delay: 0.5s; animation-name: fadeInRight;">
+            <div class="map_info">
+                <p class="map_info_p">TEL</p>
+                <a href="tel:053-475-2100;" style="cursor:text"><p class="map_info_p">(053) 475-2100</p></a>
             </div>
-            <div class="map-info">
-                <p class="map-info-p">FAX</p>
-                <a href="javascript:void(0);" style="cursor:text"><p class="map-info-p">(0504) 257-5966</p></a>
+            <div class="map_info">
+                <p class="map_info_p">FAX</p>
+                <a href="javascript:void(0);" style="cursor:text"><p class="map_info_p">(0504) 257-5966</p></a>
             </div>
-            <div class="map-info">
-                <p class="map-info-p">E-MAIL</p>
-                <p class="map-info-p">call@resoft.kr</p>
+            <div class="map_info">
+                <p class="map_info_p">E-MAIL</p>
+                <p class="map_info_p">call@resoft.kr</p>
             </div>
-            <div class="map-info">
-                <p class="map-info-p">ADDRESS</p>
-                <p class="map-info-p">(41260) 
+            <div class="map_info">
+                <p class="map_info_p">ADDRESS</p>
+                <p class="map_info_p">(41260) 
                     <br>
                     대구광역시 동구 동구대로 465, 대구스케일업허브 (DASH) 704호
                     <br>
@@ -491,57 +485,25 @@
             </div>
         </div>
     </div>
-    <script>
-        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-            mapOption = { //지도를 생성할 때 필요한 기본 옵션
-                center: new kakao.maps.LatLng(35.871691843254716, 128.62496478375644), // 지도의 중심좌표
-                level: 3 // 지도의 확대 레벨
-            };
-    
-        // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-        var map = new kakao.maps.Map(mapContainer, mapOption); //지도 생성 및 객체 리턴
-    
-        var imageSrc = './images/지도마커.png', // 마커이미지의 주소  
-        imageSize = new kakao.maps.Size(220, 45), // 마커이미지의 크기
-        imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
-
-        // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
-        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-            markerPosition = new kakao.maps.LatLng(35.871691843254716, 128.62496478375644); // 마커가 표시될 위치입니다
-    
-        // 마커를 생성합니다
-        var marker = new kakao.maps.Marker({
-            position: markerPosition, 
-            image: markerImage // 마커이미지 설정 
-        });
-    
-        // 마커가 지도 위에 표시되도록 설정합니다
-        marker.setMap(map);
-	
-	// 나타내기 wow 기능 사용
-        new WOW().init();
-    </script>
-
+	    
     <footer>
-        <div class="footer-wrap">
-            <div class="footer-logo">
-                <img src="./images/푸터로고.png" alt="footer-logo">
+        <div class="footer_wrap">
+            <div class="footer_logo">
+                <img src="./images/푸터로고.png" alt="footer_logo">
             </div>
-            <div class="footer-content">
-                <p class="footer-content-main">주식회사 리소프트는 새로운 소프트웨어로 진화하여 여러분께 응답드리고자 노력하겠습니다.</p>
-                <div class="footer-info-wrap">
-                    <div class="footer-info">
-                        <p class="footer-info-p">상호. (주)리소프트</p>
-                        <p class="footer-info-p">대표이사. 오유나</p>
-                        <p class="footer-info-p">사업자등록번호. 722-81-02219</p>
-                        <p class="footer-info-p">개인정보책임자. 이현지</p>
+            <div class="footer_content">
+                <p class="footer_content_main">주식회사 리소프트는 새로운 소프트웨어로 진화하여 여러분께 응답드리고자 노력하겠습니다.</p>
+                <div class="footer_info_wrap">
+                    <div class="footer_info">
+                        <p class="footer_info_p">상호. (주)리소프트</p>
+                        <p class="footer_info_p">대표이사. 오유나</p>
+                        <p class="footer_info_p">사업자등록번호. 722-81-02219</p>
+                        <p class="footer_info_p">개인정보책임자. 이현지</p>
                         <pre> </pre>
-                        <p class="footer-info-p">주소. (41260) 대구광역시 동구 동구대로 465, 대구스케일업허브 (DASH) 713 (신천동 106)</p>
-                        <p class="footer-info-p">전화. <a href="tel:053-475-2110" style="cursor: text;">
-                            (053) 475-2100</a>
+                        <p class="footer_info_p">주소. (41260) 대구광역시 동구 동구대로 465, 대구스케일업허브 (DASH) 713 (신천동 106)</p>
+                        <p class="footer_info_p">전화. <a href="tel:053-475-2110" style="cursor: text;">(053) 475-2100</a>
                             <!-- <i class="fas fa-solid fa-pipe"></i> --></p>
-                        <p class="footer-info-p">팩스. <a href="javascript:void(0);" style="cursor: text;">
-                            (0504) 257-5966</a></p>
+                        <p class="footer_info_p">팩스. <a href="javascript:void(0);" style="cursor: text;">(0504) 257-5966</a></p>
                         <p class="footer-info-p">이메일. call@resoft.kr</p>
                     </div>
                 </div>
@@ -550,6 +512,7 @@
             </div>
         </div>
     </footer>
+	    
     <!-- script -->
     <!-- 헤더 js -->
     <script type="text/javascript" src="wow.min.js"></script>
@@ -563,9 +526,11 @@
     <!-- 클라이언트 js -->
     <script type="text/javascript"  src="./js/client.js"></script>
 
-    <!-- 지도푸터 js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
-
+    <!-- 카카오 api -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=027b7e5db240a01344d08087c7742cd4"></script>
+    <!-- wow.js -->
+    <script src="./js/wow.min.js"></script>
+    <!-- map.js -->
+    <script src="./js/map.js"></script>
 </body>
 </html>
