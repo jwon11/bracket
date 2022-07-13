@@ -98,6 +98,7 @@ a {
     gap: 35px;
     flex-direction: column;
     font-size: 18px;
+    text-align: left;
     margin-top: 75px;
     visibility:visible;
 }
@@ -194,6 +195,7 @@ a {
 .footer_content .footer_content_main{
     color: white;
     font-size: 19px;
+    text-align: left;
     margin-bottom: 10px;
 }
 .footer_content .footer_info_wrap, .footer_info a{
@@ -217,6 +219,7 @@ a {
 .footer_wrap .copyright{
     color: #828282;
     font-size: 16px;
+    text-align: left;
 }
 .footer_info_p{
     font-size: 16px;
