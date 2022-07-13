@@ -19,27 +19,28 @@ html {
 /* header css */
 
 
+
 .topBtn{
-    border-radius: 50%;
+    border-radius: 50%; 
     border-style: solid;
-    border-color: rgb(180, 180, 180);
+    border-color: rgb(179, 179, 179);
     border-width: 1px;
     position:fixed;
     width:45px;
     height:45px;
     background: white;
     bottom:55px;
-    right:30px;
+    right:40px;
     text-decoration: none;
     text-align: center; 
-    color: rgb(17, 17, 17);
+    color: rgb(51, 51, 51);
     font-size: 20px;
-    z-index:9999;
+    z-index: 9999;
 }
 
 .topBtn p{
-    padding-top:60px;
-    color: rgb(180, 180, 180);
+    padding-top:35px;
+    color: rgb(179, 179, 179)
     font-size: 1rem;
     font-weight: bold;
 }
