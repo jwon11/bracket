@@ -2,7 +2,7 @@
 
 /* ----- 공통 ----- */
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   border: 0;
@@ -14,30 +14,26 @@ body {
   max-width: 1400px;
   margin: 0px auto;
   text-align: center;
-}
+} */
 
-ol,
-ul {
+.b_wrap ol,
+.b_wrap ul {
   list-style: none;
   padding: 0;
 }
 
-/* div {
-  display: inline;
-} */
-
-a {
+.b_wrap a {
   display: inline-block;
   text-decoration: none;
 }
 
-a:link {
+.b_wrap a:link {
   color: #2e2e2e;
 }
-a:visited {
+.b_wrap a:visited {
   color: #2e2e2e;
 }
-a:active {
+.b_wrap a:active {
   color: #2e2e2e;
 }
 
@@ -50,7 +46,7 @@ a:active {
   margin: 10px 0;
 }
 
-.b_wrap .subTitleEng {
+.b_wrap .subtitle_eng {
   color: #ee72d8;
   font-size: 15px;
   font-weight: 600;
@@ -59,7 +55,7 @@ a:active {
   display: inline;
 }
 
-.b_wrap .back .app-text {
+.b_wrap .back .app_text {
   color: white;
   font-size: 20px;
   position: relative; /*위치조정*/
@@ -136,7 +132,7 @@ a:active {
   /* perspective-origin: 50% 50%; */
 }
 
-.b_wrap .flip-item {
+.b_wrap .flip_item {
   width: 100%;
   display: inline-block;
   padding-top: 50px;
@@ -219,6 +215,7 @@ a:active {
 .flip:hover .front {
   transform: rotateY(180deg);
 }
+
 .flip:hover .back {
   transform: rotateY(0deg);
 }
@@ -231,7 +228,6 @@ a:active {
   }
   .b_wrap .flip {
     width: 43.33333333%;
-    /* display: none; 크롬 미디어쿼리 적용*/
   }
 }
 
