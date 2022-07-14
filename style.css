@@ -1,57 +1,106 @@
-.cus-wrap{
-
+.cus_wrap{
+    max-width: 1400px;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+   
 }
-.ecoce-bot{
-    width: 300px;
-    height: 250px;
-    display: block;
+    body{
+        max-width: 1400px;
+        margin:0px auto;
+        text-align: center;
+    }
 
-    margin-top:300px;
-    margin: left 800px;
-    margin-right: 50px;
-    float: right;
+
+.ecoce-bot{
+    float :right;
+    position: relative;
     display: block;
+    width: 60%;
+    margin-top:5%;
+    margin-right: 2%;
+
 }
    
 .ministry-Envrion-img{
+    position :absolute;
     top: 30%;
     width:25%;
-  float: right ;
-  display: block;
-  font-weight: 600;
+    right :2%;
     
 }
 .ecoce-img-wrap{
-relative
-position: right;
-position:relative;,
-position:absolute;} 
+    position: relative;
+    left : 0;
+    width:75%;
+    
+    
+    
+}
 
-.eco-clean-earth{
-text-align: right;
-font}
+.cus_wrap .eco-clean-earth {
+   
+    margin-top: 100px;
+    margin-right: 2%;
+    margin-bottom: 100px;
+    
+}
+    
+   
 
-.box-wrap{
+.img_btn{
+    position:relative;
+    height:100%;
+    max-width :1400px;
+    margin: 0 auto;
 
 }
 
-.img-btn{
-
-}
-
-.box btn{
-
-
-}
-p {
-
-
-    font-size: 50px;
-
-}
-.box_wrap {
-
+.box_wrap{
+    display: block;
+    height: 250px;
+    width:100%;
     background-color: navy;
+    overflow: hidden;
     
     }
-    
+.cus_wrap .eco-clean-earth .text1 {
+   font-size: 40px;
+   font-weight: 600;
+   text-align: right;
+}
+.cus_wrap .eco-clean-earth .text2{ 
+    font-size: 30px;
+    font-weight: 400px;
+    text-align: right;
+
+}
+
+ @media screen and (max-width:940px){
+    .ministry-Envrion-img {
+        display: none;
+    }  
+        
+    .ecoce-bot{
+        float:left;
+        width:70%;
+        margin-left: 20px;
+    }
+}
+  .ecoce-img-wrap{
+    width:90%;
+    margin:3%;
+  }
+  .cus_wrap.eco-clean-earth{
+    margin-right: 5%;
+    margin-top: 0px;
+  }
+  .cus_wrap.eco-clean-earth.text1{
+    font-size: 30px;
+  }
+  .cus_wrap.eco-clean-earth.text2{
+    font-size: 25px;
+  }
+  .logo1{
+    margin-top: 50px;
+  }
