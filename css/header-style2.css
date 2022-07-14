@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+
 body {
     width: 100%;
     height: 100%;
@@ -73,36 +75,38 @@ html {
 /* 메인 내용 css */
 
 
-.main{
+#main{
     height: 100%;
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
 }
 
-.main_photo {
+#main .main_photo {
     position: absolute;
     right: 2%;
     top: 20%;
 }
 
-.main .text_wrap {
-    top:40%;
+#main .text_wrap {
+    top:45%;
     left:2%;
     position: absolute; 
     text-align: left;
     color: white;
 }
 
-.main .text_wrap h4{
+#main .text_wrap h4{
     font-size:3rem;
     font-weight: bold;
+    padding-bottom: 5%;
 }
 
-.main .text_wrap p{
+#main .text_wrap p{
     font-size:1rem;
     max-width: 600px;
     font-weight: 500;
+    line-height: 120%;
 }
 
 
@@ -121,12 +125,12 @@ html {
         width: 65%;
     }
 
-    .main{
+    #main{
         max-width: 900px;
         position: relative;
     }
 
-    .main .main_photo {
+    #main .main_photo {
         width: 65%;
         position: absolute;
         top:10%;
@@ -134,19 +138,18 @@ html {
     }
     
 
-    .main .text_wrap {
+    #main .text_wrap {
         top: 50%;
         left: 10%;
         max-width: 350px;
     }
 
     
-    .main .text_wrap h4{
+    #main .text_wrap h4{
         font-size: 220%;
     }
     
 }
-
 
 
 
