@@ -13,7 +13,7 @@
     }
 
 
-.ecoce-bot{
+.ecoce_bot{
     float :right;
     position: relative;
     display: block;
@@ -23,23 +23,23 @@
 
 }
    
-.ministry-Envrion-img{
+.ministry_Envrion_img{
     position :absolute;
     top: 30%;
     width:25%;
     right :2%;
     
 }
-.ecoce-img-wrap{
+.ecoce_img_wrap{
     position: relative;
     left : 0;
-    width:95%;
+    width:85%;
     
     
     
 }
 
-.cus_wrap .eco-clean-earth {
+.cus_wrap .eco_clean_earth {
    
     
     margin-right: 2%;
@@ -63,14 +63,17 @@
     width:100%;
     background-color: navy;
     overflow: hidden;
+    left:5%;
     
     }
-.cus_wrap .eco-clean-earth .text1 {
-   font-size: 30px;
+.cus_wrap .eco_clean_earth .text1 
+{
+   font-size: 40px;
    font-weight: 600;
    text-align: right;
 }
-.cus_wrap .eco-clean-earth .text2{ 
+.cus_wrap .eco_clean_earth .text2
+{ 
     font-size: 30px;
     font-weight: 400px;
     text-align: right;
@@ -78,28 +81,28 @@
 }
 
   @media screen and (max-width:940px){
-    .ministry-Envrion-img {
+    .ministry_Envrion_img {
         display: none;
     }  
         
-    .ecoce-bot{
+    .ecoce_bot{
         float:left;
         width:70%;
         margin-left: 20px;
     }
 
-   .ecoce-img-wrap{
-    width:90%;
+   .ecoce_img_wrap{
+    width:95%;
     margin:3%;
   }
-   .cus_wrap .eco-clean-earth{
+   .cus_wrap .eco-clean_earth{
     margin-right: 5%;
     margin-top: 0px;
   }
-   .cus_wrap .eco-clean-earth.text1{
+   .cus_wrap .eco_clean_earth .text1{
     font-size: 30px;
   }
-   .cus_wrap .eco-clean-earth.text2{
+   .cus_wrap .eco_clean_earth .text2{
     font-size: 25px;
   }
    .logo1{
