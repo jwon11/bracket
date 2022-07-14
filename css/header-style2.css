@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-
   }
   
 html {
@@ -111,36 +110,35 @@ html {
 
 
 
-
 @media screen and (max-width:940px) {
     
     .header {
-        background: url('../images/헤더배경sm.png') no-repeat;
+        background: url('../images/헤더배경940.png') no-repeat;
         background-position-x: right;
-        height: 900px;
+        height: 1000px;
     }
 
 
     .header .logo { 
-        width: 65%;
+        width: 60%;
     }
 
     #main{
-        max-width: 900px;
+        /*max-width: 900px;*/
         position: relative;
     }
 
     #main .main_photo {
-        width: 65%;
         position: absolute;
         top:10%;
-        right:60%;
+        left:10%;
+        width: 300px;
     }
     
 
     #main .text_wrap {
         top: 50%;
-        left: 10%;
+        left: 20%;
         max-width: 350px;
     }
 
@@ -151,5 +149,24 @@ html {
     
 }
 
+
+
+
+@media screen and (max-width:640px) {
+
+    .header {
+        background: url('../images/헤더배경sm.png') no-repeat;
+        background-position-x: right;
+        height: 1000px;
+    }
+    
+    
+    #main .main_photo {
+        top:10%;
+        left:10%;
+        width: 200px;
+    }
+
+}
 
 
