@@ -47,7 +47,7 @@ html {
 }
 
 
-/* 상단 배경 메뉴 css */
+/* 상단 배경, 메뉴 css */
 
 .header {
     width: 100%;
@@ -99,14 +99,12 @@ html {
 .main .text_wrap h4{
     font-size:300%;
     font-weight: bold;
-    margin-bottom: 5%;
 }
 
 .main .text_wrap p{
     font-size:100%;
     max-width: 600px;
     font-weight: 500;
-    line-height: 120%;
 
 }
 
