@@ -82,14 +82,14 @@ html {
     position: relative;
 }
 
-.main .main_photo {
+.main_photo {
     position: absolute;
     right: 2%;
     top: 20%;
 }
 
 .main .text_wrap {
-    top:45%;
+    top:40%;
     left:2%;
     position: absolute; 
     text-align: left;
@@ -105,7 +105,6 @@ html {
     font-size:100%;
     max-width: 600px;
     font-weight: 500;
-
 }
 
 
@@ -149,7 +148,6 @@ html {
     }
     
 }
-
 
 
 
