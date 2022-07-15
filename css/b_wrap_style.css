@@ -127,7 +127,7 @@
 /* 애니메이션 */
 /* back 이미지 */
 
-#back1 {
+#back_img1 {
   width: 100%;
   height: 100%;
   background-image: radial-gradient(circle, #0000003a, #000000d5),
@@ -138,7 +138,7 @@
   overflow: hidden;
 }
 
-#back2 {
+#back_img2 {
   width: 100%;
   height: 100%;
   background-image: radial-gradient(circle, #0000003a, #000000d5),
@@ -149,7 +149,7 @@
   overflow: hidden;
 }
 
-#back3 {
+#back_img3 {
   width: 100%;
   height: 100%;
   background-image: radial-gradient(circle, #0000003a, #000000d5),
@@ -160,7 +160,7 @@
   overflow: hidden;
 }
 
-#back4 {
+#back_img4 {
   width: 100%;
   height: 100%;
   background-image: radial-gradient(circle, #0000003a, #000000d5),
