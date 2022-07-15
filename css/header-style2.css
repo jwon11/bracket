@@ -122,7 +122,9 @@ html {
 
     .header .logo { 
         width: 60%;
+        left: 3%;
     }
+    
 
     #main{
         position: relative;
@@ -160,8 +162,10 @@ html {
     .header {
         background: url('../images/헤더배경sm.png') no-repeat;
         background-position-x: right;
+        height: 830px;
     }
     
+
     #main .main_photo {
         top:10%;
         left: 8%;
