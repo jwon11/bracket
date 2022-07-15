@@ -1,28 +1,5 @@
 @charset "utf-8";
 
-.b_wrap ol,
-.b_wrap ul {
-  list-style: none;
-  padding: 0;
-}
-
-.b_wrap a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-.b_wrap a:link {
-  color: #2e2e2e;
-}
-
-.b_wrap a:visited {
-  color: #2e2e2e;
-}
-
-.b_wrap a:active {
-  color: #2e2e2e;
-}
-
 /* 글씨 */
 
 .b_wrap .title {
@@ -99,6 +76,7 @@
   justify-content: center;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 /* 카드 배치 */
