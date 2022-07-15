@@ -157,8 +157,6 @@ html {
 
 @media screen and (max-width:640px) {
 
-
-
     .header {
         background: url('../images/헤더배경sm.png') no-repeat;
         background-position-x: right;
@@ -166,6 +164,7 @@ html {
     
     #main .main_photo {
         top:10%;
+        left: 8%;
     }
 
     #main .main_photo .image {
@@ -173,8 +172,9 @@ html {
     }
 
     #main .text_wrap {
-        top: 50%;
+        top: 45%;
         left: 15%;
+
     }
 
  
