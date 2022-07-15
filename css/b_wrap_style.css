@@ -1,21 +1,5 @@
 @charset "utf-8";
 
-/* ----- 공통 ----- */
-
-/* * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Noto Sans KR", sans-serif;
-  max-width: 1400px;
-  margin: 0px auto;
-  text-align: center;
-} */
-
 .b_wrap ol,
 .b_wrap ul {
   list-style: none;
@@ -30,14 +14,16 @@ body {
 .b_wrap a:link {
   color: #2e2e2e;
 }
+
 .b_wrap a:visited {
   color: #2e2e2e;
 }
+
 .b_wrap a:active {
   color: #2e2e2e;
 }
 
-/* ----- 글씨 ----- */
+/* 글씨 */
 
 .b_wrap .title {
   color: #2e2e2e;
@@ -58,13 +44,13 @@ body {
 .b_wrap .back .app_text {
   color: white;
   font-size: 20px;
-  position: relative; /*위치조정*/
+  position: relative;
   top: 70px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
-/* ----- front 이미지 ----- */
+/* front 아이콘 */
 
 .b_wrap .img_wrap {
   display: inline-block;
@@ -91,10 +77,10 @@ body {
   margin-top: 60px; /* 아이콘 이미지 위치조정*/
 }
 
-/* front */
-/* ----- 영역 ----- */
+/* 영역 */
 
 .b_wrap {
+  font-family: "Noto Sans KR", sans-serif;
   display: block;
   min-height: 750px;
   max-width: 1400px;
@@ -115,21 +101,18 @@ body {
   margin: 0;
 }
 
-/* ----- 카드 배치 ----- */
+/* 카드 배치 */
 
 .b_wrap .flip {
   min-width: 22%;
   display: inline-block;
   position: relative;
-  /* width: calc(100% / 4 - 3%); */
   height: 350px;
   text-align: center;
   margin: 0 auto;
   margin: 1.5%;
   padding: 0;
   transition: 1s;
-  /* perspective: 1000px; */ /* 원근감 */
-  /* perspective-origin: 50% 50%; */
 }
 
 .b_wrap .flip_item {
@@ -141,8 +124,8 @@ body {
   backface-visibility: hidden;
 }
 
-/* 애니메이션 */
-/* ----- back 이미지 ----- */
+/* ---- 애니메이션 ---- */
+/* back 이미지 */
 
 #back1 {
   width: 100%;
@@ -188,7 +171,7 @@ body {
   overflow: hidden;
 }
 
-/* ----- 마우스오버 ----- */
+/* 마우스오버효과*/
 
 .front {
   min-width: 230px;
@@ -220,7 +203,7 @@ body {
   transform: rotateY(0deg);
 }
 
-/* ----- 반응형웹 ----- */
+/* ---- 반응형웹 ---- */
 
 @media screen and (max-width: 950px) {
   .b_wrap .b_con .b_row {
@@ -245,5 +228,3 @@ body {
     width: 100%;
   }
 }
-
-
