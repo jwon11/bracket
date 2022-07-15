@@ -1,16 +1,14 @@
 .cus_wrap{
+    background: url(../images/web.png) no-repeat;
     max-width: 1400px;
-    box-sizing: border-box;
+    height: 1100px;
+    margin: 0 auto;
     display: block;
+    margin-top: 60px;
+    margin-bottom: 250px;
     position: relative;
-    margin:0px auto;
-   
+    background-position: center;
 }
-    body{
-        max-width: 1400px;
-        margin:0px auto;
-        text-align: center;
-    }
 
 
 .ecoce_bot{
@@ -20,32 +18,24 @@
     width: 60%;
     margin-top:5%;
     margin-right: 2%;
-
 }
    
 .ministry_Envrion_img{
     position :absolute;
     top: 30%;
     width:25%;
-    right :2%;
-    
-    
+    right :2%; 
 }
+
 .ecoce_img_wrap{
     position: relative;
     left : 0;
-    width:85%;
-    
-    
-    
+    width: 85%; 
 }
 
 .cus_wrap .eco_clean_earth {
-   
-    
     margin-right: 2%;
     margin-bottom: 100px;
-    
 }
     
    
@@ -96,16 +86,20 @@
     width:95%;
     margin:3%;
   }
+      
    .cus_wrap .eco-clean_earth{
     margin-right: 5%;
     margin-top: 0px;
   }
+      
    .cus_wrap .eco_clean_earth .text1{
     font-size: 30px;
   }
+      
    .cus_wrap .eco_clean_earth .text2{
     font-size: 25px;
   }
+      
    .logo1{
     margin-top: 50px;
   }
