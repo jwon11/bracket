@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+.cus_wrap{
+    background: url(../images/web.png) no-repeat;
+    max-width: 1400px;
+    height: 1100px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 250px;
+    position: relative;
+    background-position: center;
+}
+.cus_wrap .ecoce_bot{
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 740px;
+}
+.cus_wrap .ministry_envrion_img{
+    position: absolute;
+    top: 290px;
+    right: 0;
+    width: 350px;
+}
+.cus_wrap .ecoce_img_wrap{
+    position: relative;
+    width: 960px;
+    height: 100%;
+    top: 160px;
+}
+.cus_wrap .ecoce_img_wrap .ecoce_img{
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+.cus_wrap .eco_clean_earth{
+    position: absolute;
+    top: 830px;
+    right: 0;
+    margin-top: 50px;
+    text-align: right;
+    line-height: 45px;
+}
+.cus_wrap .eco_clean_earth p:first-child{
+    font-size: 40px;
+    font-weight: 600;
+}
+.cus_wrap .eco_clean_earth P:last-child{
+    font-size: 30px;
+}
+@media screen and (max-width:1500px){
+    .cus_wrap{
+        height: 60vw;
+    }
+    .cus_wrap .ecoce_bot{
+        width: 53%;
+        top: 5%;
+        right: 2%;
+    }
+    .cus_wrap .ministry_envrion_img{
+        width: 25%;
+        top: 30%;
+        right: 2%;
+    }
+    .cus_wrap .ecoce_img_wrap{
+        width: 69%;
+        top: 20%;
+        left: 2%;
+    }
+    .cus_wrap .eco_clean_earth{
+        top: 90%;
+        right: 2%;
+    }
+}
+@media screen and (max-width: 1217px){
+    .cus_wrap .eco_clean_earth p:first-child {
+        font-size: 30px;
+    }
+    .cus_wrap .eco_clean_earth p:last-child {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:940px){
+    .cus_wrap{
+        height: auto;
+        margin: 60px 2%;
+    }
+    .cus_wrap .ecoce_bot{
+        width: 75%;
+        position: unset;
+    }
+    .cus_wrap .ministry_envrion_img{
+        display: none;
+    }
+    .cus_wrap .ecoce_img_wrap{
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+        margin-top:  65px;
+        margin-bottom: 30px;
+    }
+    .cus_wrap .ecoce_img_wrap .ecoce_img{
+        position: unset;
+    }
+    .cus_wrap .eco_clean_earth{
+        margin: 0;
+        position: unset;
+    }
+}
+@media screen and (max-width:640px){
+    .cus_wrap .ecoce_bot{
+        width: 95%;
+    }
+    .cus_wrap .ecoce_img_wrap{
+        margin-top: 40px;
+    }
+    .cus_wrap .eco_clean_earth{
+        line-height: 35px;
+    }
+    .cus_wrap .eco_clean_earth p:first-child {
+        font-size: 28px;
+    }
+    .cus_wrap .eco_clean_earth p:last-child {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 430px){
+    .cus_wrap .eco_clean_earth p:first-child {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .cus_wrap .eco_clean_earth p:last-child {
+        font-size: 20px;
+    }
+}
