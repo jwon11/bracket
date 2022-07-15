@@ -124,7 +124,7 @@
   backface-visibility: hidden;
 }
 
-/* ---- 애니메이션 ---- */
+/* 애니메이션 */
 /* back 이미지 */
 
 #back1 {
@@ -203,7 +203,7 @@
   transform: rotateY(0deg);
 }
 
-/* ---- 반응형웹 ---- */
+/* 반응형웹 */
 
 @media screen and (max-width: 950px) {
   .b_wrap .b_con .b_row {
