@@ -45,7 +45,7 @@
   color: white;
   font-size: 20px;
   position: relative;
-  top: 70px;
+  top: calc(50% - 60px);
   line-height: 30px;
   font-weight: 400;
 }
@@ -211,6 +211,7 @@
   }
   .b_wrap .flip {
     width: 43.33333333%;
+    height: 300px;
   }
 }
 
@@ -220,6 +221,28 @@
   }
   .b_wrap .flip {
     width: 100%;
+    height: 250px;
+  }
+
+  .b_wrap .title {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .b_wrap .subtitle_eng {
+    font-size: 13px;
+  }
+
+  .b_wrap img {
+    margin-top: 25px;
+  }
+
+  #appicon {
+    margin-top: 30px;
+  }
+
+  #metaverse {
+    margin-top: 45px;
   }
 }
 
