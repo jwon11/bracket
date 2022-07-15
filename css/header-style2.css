@@ -87,6 +87,7 @@ html {
     top: 20%;
 }
 
+
 #main .text_wrap {
     top:45%;
     left:2%;
@@ -124,35 +125,39 @@ html {
     }
 
     #main{
-        /*max-width: 900px;*/
         position: relative;
     }
 
     #main .main_photo {
         position: absolute;
         top:10%;
-        left:10%;
-        width: 300px;
+        left:20%;
+        
     }
-    
+
+    #main .main_photo .image {
+        width:80%; 
+    }
+
 
     #main .text_wrap {
         top: 50%;
-        left: 20%;
-        max-width: 350px;
+        left: 25%;
+        max-width: 380px;
     }
 
     
     #main .text_wrap h4{
-        font-size: 220%;
+        font-size: 2.2rem;
     }
     
 }
 
 
 
-
 @media screen and (max-width:640px) {
+
+
 
     .header {
         background: url('../images/헤더배경sm.png') no-repeat;
@@ -160,13 +165,20 @@ html {
         height: 1000px;
     }
     
-    
     #main .main_photo {
         top:10%;
-        left:10%;
-        width: 200px;
     }
 
-}
+    #main .main_photo .image {
+        width:85%; 
+    }
 
+    #main .text_wrap {
+        top: 50%;
+        left: 15%;
+        max-width: 380px;
+    }
+
+ 
+}
 
