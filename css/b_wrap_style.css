@@ -1,47 +1,6 @@
 @charset "utf-8";
 
-/* ----- 공통 ----- */
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Noto Sans KR", sans-serif;
-  max-width: 1400px;
-  margin: 0px auto;
-  text-align: center;
-}
-
-ol,
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-/* div {
-  display: inline;
-} */
-
-a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-a:link {
-  color: #2e2e2e;
-}
-a:visited {
-  color: #2e2e2e;
-}
-a:active {
-  color: #2e2e2e;
-}
-
-/* ----- 글씨 ----- */
+/* 글씨 */
 
 .b_wrap .title {
   color: #2e2e2e;
@@ -50,7 +9,7 @@ a:active {
   margin: 10px 0;
 }
 
-.b_wrap .subTitleEng {
+.b_wrap .subtitle_eng {
   color: #ee72d8;
   font-size: 15px;
   font-weight: 600;
@@ -59,16 +18,16 @@ a:active {
   display: inline;
 }
 
-.b_wrap .back .app-text {
+.b_wrap .back .app_text {
   color: white;
   font-size: 20px;
-  position: relative; /*위치조정*/
-  top: 70px;
+  position: relative;
+  top: calc(50% - 60px);
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
-/* ----- front 이미지 ----- */
+/* front 아이콘 */
 
 .b_wrap .img_wrap {
   display: inline-block;
@@ -95,10 +54,10 @@ a:active {
   margin-top: 60px; /* 아이콘 이미지 위치조정*/
 }
 
-/* front */
-/* ----- 영역 ----- */
+/* 영역 */
 
 .b_wrap {
+  font-family: "Noto Sans KR", sans-serif;
   display: block;
   min-height: 750px;
   max-width: 1400px;
@@ -117,26 +76,24 @@ a:active {
   justify-content: center;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
-/* ----- 카드 배치 ----- */
+/* 카드 배치 */
 
 .b_wrap .flip {
   min-width: 22%;
   display: inline-block;
   position: relative;
-  /* width: calc(100% / 4 - 3%); */
   height: 350px;
   text-align: center;
   margin: 0 auto;
   margin: 1.5%;
   padding: 0;
   transition: 1s;
-  /* perspective: 1000px; */ /* 원근감 */
-  /* perspective-origin: 50% 50%; */
 }
 
-.b_wrap .flip-item {
+.b_wrap .flip_item {
   width: 100%;
   display: inline-block;
   padding-top: 50px;
@@ -146,9 +103,9 @@ a:active {
 }
 
 /* 애니메이션 */
-/* ----- back 이미지 ----- */
+/* back 이미지 */
 
-#back1 {
+#back_img1 {
   width: 100%;
   height: 100%;
   background-image: radial-gradient(circle, #0000003a, #000000d5),
@@ -159,7 +116,7 @@ a:active {
   overflow: hidden;
 }
 
-#back2 {
+#back_img2 {
   width: 100%;
   height: 100%;
   background-image: radial-gradient(circle, #0000003a, #000000d5),
@@ -170,7 +127,7 @@ a:active {
   overflow: hidden;
 }
 
-#back3 {
+#back_img3 {
   width: 100%;
   height: 100%;
   background-image: radial-gradient(circle, #0000003a, #000000d5),
@@ -181,7 +138,7 @@ a:active {
   overflow: hidden;
 }
 
-#back4 {
+#back_img4 {
   width: 100%;
   height: 100%;
   background-image: radial-gradient(circle, #0000003a, #000000d5),
@@ -192,7 +149,7 @@ a:active {
   overflow: hidden;
 }
 
-/* ----- 마우스오버 ----- */
+/* 마우스오버효과*/
 
 .front {
   min-width: 230px;
@@ -219,11 +176,12 @@ a:active {
 .flip:hover .front {
   transform: rotateY(180deg);
 }
+
 .flip:hover .back {
   transform: rotateY(0deg);
 }
 
-/* ----- 반응형웹 ----- */
+/* 반응형웹 */
 
 @media screen and (max-width: 950px) {
   .b_wrap .b_con .b_row {
@@ -231,7 +189,7 @@ a:active {
   }
   .b_wrap .flip {
     width: 43.33333333%;
-    /* display: none; 크롬 미디어쿼리 적용*/
+    height: 300px;
   }
 }
 
@@ -239,17 +197,41 @@ a:active {
   .b_wrap .b_con .b_row {
     width: auto;
   }
+
   .b_wrap .flip {
-    width: 100%;
+    width: calc(100% / 2 - 3%);
+    height: 250px;
+  }
+
+  .b_wrap .title {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .b_wrap .subtitle_eng {
+    font-size: 13px;
+  }
+
+  .b_wrap img {
+    margin-top: 25px;
+  }
+
+  #appicon {
+    margin-top: 30px;
+  }
+
+  #metaverse {
+    margin-top: 45px;
   }
 }
 
-@media screen and (max-width: 430px)
+@media screen and (max-width: 500px) {
+  .b_wrap .b_con .b_row {
+    width: auto;
+  }
+
   .b_wrap .flip {
     width: 100%;
     height: 250px;
   }
-    
 }
-
-
