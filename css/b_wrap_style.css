@@ -226,7 +226,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .b_wrap .b_con .b_row {
     width: auto;
   }
