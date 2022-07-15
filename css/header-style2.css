@@ -162,7 +162,6 @@ html {
     .header {
         background: url('../images/헤더배경sm.png') no-repeat;
         background-position-x: right;
-        height: 1000px;
     }
     
     #main .main_photo {
@@ -176,7 +175,6 @@ html {
     #main .text_wrap {
         top: 50%;
         left: 15%;
-        max-width: 380px;
     }
 
  
