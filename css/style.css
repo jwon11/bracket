@@ -1,0 +1,25 @@
+.parent{
+    top: 480px;
+    left:100px;
+    width: 1441px;
+    height: 600px;
+   position: relative;
+    z-index:10;
+}
+.ecoce_img{
+    position: absolute;
+    top :60px;
+    right :30px;
+    font-size: 40px;
+    font-weight: 30px;
+}
+
+
+.child{
+    position: absolute;
+    left : 230px;
+    top : 50px;
+    
+
+
+}
